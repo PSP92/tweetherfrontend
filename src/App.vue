@@ -24,6 +24,12 @@ name:'App',
 components: {
 Footer,
 Header,
+},
+data:function() {
+  return {
+    loggedIn:false,
+    token:''
+  }
 }
 }
 </script>
