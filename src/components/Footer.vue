@@ -1,6 +1,10 @@
 <template>
-<b-new>
-</b-new>
+<b-navbottom>
+    <template>
+
+
+    </template>
+</b-navbottom>
 </template>
 
 

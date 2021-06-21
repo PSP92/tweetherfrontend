@@ -46,5 +46,14 @@ width: 55px;
 height: 55px;
 padding: 5px;
 }
+
+a.button.is-primary {
+    background:#d0d1ff;
+    color:black;
+    }
+a.button.is-light{
+    background:#c8e7ff;
+    color:black;
+    }
 </style>
 
