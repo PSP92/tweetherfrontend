@@ -1,12 +1,12 @@
 <template>
     <b-navbar>
         <template #brand>
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            <b-navbar-item1 tag="router-link" :to="{ path: '/' }">
                <img
                     src="https://i.ibb.co/DrBtXCr/Tweet-HER1.png"
                     alt="tweetHer pride flag logo"
                 >
-            </b-navbar-item>
+            </b-navbar-item1>
         </template>
         
         <template #end>
@@ -37,13 +37,14 @@ export default {
 }
 </script>
 <style scoped>
-    b-bar-item #logo {
-    align-content: left;
+b-navbar-item1{
+    justify-content: center;
 }
 img {
-border-radius:10% ;
-/* width: 200px;
-height: 200px; */
+border-radius:30% ;
+width: 55px;
+height: 55px;
+padding: 5px;
 }
 </style>
 
