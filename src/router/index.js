@@ -5,7 +5,8 @@ import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import Main from '../views/Main.vue'
 import UserPage from '../views/UserPage.vue'
-
+import Search from '../views/Search.vue'
+import Notifications from '../views/Notifications.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -35,6 +36,18 @@ const routes = [
     path: '/userpage',
     name: 'UserPage',
     component: UserPage,
+    props: true
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search,
+    props: true
+  },
+  {
+    path: '/notifcations',
+    name: 'Notifications',
+    component: Notifications,
     props: true
   },
 ]

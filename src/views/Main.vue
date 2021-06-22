@@ -1,16 +1,21 @@
 <template>
 <div class="box">
   <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+    <ul>
+     <li v-for="tweet of tweets" v-bind:key="tweet.id">
+    <div>
+      <div>
+      {{tweet.body}}
+
+        <figure class="image is-64x64">
+        <img :src="tweet.img" alt="Image">
       </figure>
-    </div>
-    <div class="media-content">
-      <div class="content">
-        <li v-for="tweet of tweets" v-bind:key="tweet.id">{{tweet.img}} {{tweet.body}}</li>
+         <button class="button is-rounded"> ❤️  {{tweet.likes}}</button>
+         
       </div>
     </div>
+     </li>
+    </ul>
   </article>
 </div>
 </template>
@@ -30,7 +35,6 @@ create: function() {
     fetch('https://tweethertm.herokuapp.com/tweets/',{
       method: 'get',
       headers: {
-        // authorization: `Bearer ${tokens.access}`
       }
     })
     .then(response => response.json())
@@ -49,10 +53,15 @@ beforeMount(){
 </script>
 
 <style scoped>
-/* .box{
-  background-color: #ffd6a5;
-} */
-/* .icon.is-small{
-  background-color: #ffadad;
-} */
+
+li{
+  list-style: none;
+  padding-top: 4em;
+}
+.button.is-rounded{
+  background-color: #caffbf;
+}
+img{
+  padding: 15px;
+}
 </style>

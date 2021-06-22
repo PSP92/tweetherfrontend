@@ -14,7 +14,7 @@
             <template #message>
             </template>
         </b-field>
-          <button class="button is-link is-rounded" @click="handleLogin">Login</button>
+          <button class="button is-link is-rounded" @click="handleLogin"> 🌈 Login</button>
     </section>
     </div>
 </template>
@@ -55,11 +55,9 @@ export default {
 </script>
 
 <style scoped>
-section{
- background-image: url("https://i.ibb.co/K9WGFBD/TweetHER.png");
-}
 .login{
     width:80%;
     margin: 8px auto;
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 </style>
