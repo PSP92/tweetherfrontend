@@ -53,7 +53,9 @@ beforeMount(){
 </script>
 
 <style scoped>
-
+.box {
+  background-color: #ffc6ff;
+}
 li{
   list-style: none;
   padding-top: 4em;

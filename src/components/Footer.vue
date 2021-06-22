@@ -11,7 +11,7 @@
     <router-link to="/notifications">Notifications<i class="fas fa-rainbow"></i></router-link>
     </p>
     <p>
-    <router-link to="/profile">Profile<i class="fas fa-rainbow"></i></router-link>
+    <router-link to="/userpage">Profile<i class="fas fa-rainbow"></i></router-link>
     </p>
   </div>
 </footer>
@@ -31,11 +31,9 @@ height: 0px;
   color: #a0c4ff;
   overflow: hidden;
   position: fixed;
-  bottom: -50px;
-  width: 100%;
-  margin-top: 10px;
-  position: fixed;
- 
+  bottom: -20px;
+  width: 99%;
+  margin-top: 10px; 
 }
 
 /* Style the links inside the navigation bar */
@@ -59,6 +57,11 @@ height: 0px;
 .navbar.footer a.active {
   background-color: #04AA6D;
   color: #a0c4ff;
+}
+p {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
 }
 </style>
 
