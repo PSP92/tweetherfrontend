@@ -45,7 +45,7 @@ const routes = [
     props: true
   },
   {
-    path: '/notifcations',
+    path: '/notifications',
     name: 'Notifications',
     component: Notifications,
     props: true

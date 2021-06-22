@@ -1,7 +1,23 @@
 <template>
-    <div class="notification is-primary is-light">
-  <button class="delete"></button>
-  Primar lorem ipsum dolor sit amet, consectetur
-  adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur.
-</div>
+    <section>
+          <b-message title="CheckYAnotifs!" type="is-warning" aria-close-label="Close message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-message>
+
+        <b-message title="Danger!hungry!" type="is-warning" aria-close-label="Close message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-message>
+
+        <b-message title="Danger!" type="is-warning" aria-close-label="Close message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-message>
+
+        <b-message title="#HawtASF" type="is-warning" aria-close-label="Close message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-message>
+
+        <b-message title="Rawr~XD" type="is-warning" aria-close-label="Close message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-message>
+    </section>
 </template>

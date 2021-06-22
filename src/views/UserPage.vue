@@ -1,5 +1,22 @@
 <template>
    <div class="userprofile">
+        <b-field label="Img">
+                  <b-input v-model="img" type="text"></b-input>
+                </b-field>
+                  <b-field label="likes">
+                  <b-input v-model="likes" type="integer"> </b-input>
+                </b-field>
+                <b-field label="Body">
+                  <b-input
+                    v-model="body"
+                    maxlength="300"
+                    type="textarea"
+                  ></b-input>
+            
+                </b-field>
+
+                <button class="button is-rounded" v-on:click="create()"> Add </button>
+                <b-button class="button is-rounded" v-on:click="editItem" type=""> Submit </b-button>
              <li v-for="tweet of tweets" v-bind:key="tweet.id">
         <hr />
         <div class="box">
@@ -16,31 +33,16 @@
               <p style="text-align: left">
                 {{ tweet.likes }} 
               </p>
-                <b-field label="Img">
-                  <b-input v-model="img" type="text"></b-input>
-                </b-field>
-                  <b-field label="likes">
-                  <b-input v-model="likes" type="integer"> </b-input>
-                </b-field>
-                <b-field label="Body">
-                  <b-input
-                    v-model="body"
-                    maxlength="300"
-                    type="textarea"
-                  ></b-input>
-                </b-field>
+              
                 <b-button class="button is-rounded" v-on:click="editItem" type=""> Submit </b-button>
 
                 <button class="button is-rounded" v-on:click="deleteItem()" v-bind:id="tweet.id"> Delete </button>
 
-                <button class="button is-rounded" v-on:click="create()"> Add </button>
              <button  class="button is-rounded" v-on:click="editSelect(tweet)" v-bind:id="tweet.id"> Edit </button>
-
+                
               </div>
             </div>
-            <!-- <div class="column is-two-fifths is-narrow-mobile"> -->
-               <!-- <button  class="button is-rounded" v-on:click="editSelect(tweet)" v-bind:id="tweet.id"> Edit </button> -->
-            <!-- </div> -->
+           
           </div>
       </li>
     </div>
@@ -94,7 +96,7 @@ export default {
           body: this.body,
           img: this.img,
           likes: this.likes
-        //   tags: this.tags,
+      
         }),
       })
         .then((response) => response.json())
