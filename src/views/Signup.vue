@@ -1,7 +1,7 @@
 <template>
     <section>
         <b-field label="Chosen Name" :label-position="labelPosition">
-            <b-input value=""></b-input>
+            <b-input value="" type="chosenname"></b-input>
         </b-field>
 
         <b-field label="Email"
@@ -18,7 +18,7 @@
             :label-position="labelPosition"
             type=""
             message="">
-            <b-input value=""></b-input>
+            <b-input value="" type="username"></b-input>
         </b-field>
 
         <b-field label="Password"
@@ -37,15 +37,21 @@
                 trap-focus>
             </b-datepicker>
         </b-field>
+         <button>Sign Up</button>
     </section>
 </template>
 
 <script>
 export default {
   name: 'Signup',
-    data() {
+    data: function() {
         return {
-            labelPosition: 'on-border'
+            labelPosition: 'on-border',
+            // chosenname: "",
+            // email:"",
+            // username:"",
+            // password:"",
+            // birthday:""
         }
     }
 }
